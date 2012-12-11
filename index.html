@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OSSC-CLIENT</title>
+	</head>
+	<body>
+
+		<div id="content-wrapper">
+			<div id="login-wrapper">
+				<form id="loginForm">
+					<label for="username"> Username </label>
+					<input type="text" id="username" placeholder="username"/>
+
+					<label for="password"> Password </label>
+					<input type="password" id="password" placeholder="password"/>
+
+					<input type="submit"/>
+				</form>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/scripts/vendor/jquery/jquery.js"></script>
+		<script type="text/javascript" src="assets/scripts/vendor/underscore/underscore.js"></script>
+		<script type="text/javascript" src="assets/scripts/vendor/backbone/backbone.js"></script>
+
+		<script type="text/javascript" src="app/models/LoginModel.js"></script>
+		<script type="text/javascript" src="app/views/LoginView.js"></script>
+
+		<script type="text/javascript">
+			// var login = new LoginModel({
+			// 	email : 'jaison.justus@ossc.com',
+			// 	password : 'ossc#5225'
+			// });
+
+			// login.login();
+
+			var loginView = new LoginView();
+		</script>
+	</body>
+</html>
