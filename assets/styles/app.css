@@ -1,0 +1,70 @@
+body	{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: #ABABAB;
+}
+
+#app-wrapper	{
+	width: 100%;
+	height: auto;
+	background-color: #ABABAB;
+	overflow: hidden;
+}
+
+#main-header	{
+	width: 96%;
+	height: 100px;
+	padding: 20px 2% 20px 2%;
+	background-color: white;
+}
+
+#main-header h1	{
+	font:14px "Verdana";
+}
+
+ol 	{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+ol li 	{
+	margin: 0px 0px 10px 0px;
+}
+
+label	{
+	width:150px;
+	display: block;
+}
+
+input[type=text], input[type=password]	{
+	width:100%;
+	height: 25px;
+	border: 0;
+	border-bottom:1px dotted #171817;
+	padding-left: 5px;
+}
+
+#content-wrapper	{
+	width: 96%;
+	height: auto;
+	padding: 2%;
+	overflow: hidden;
+}
+
+#registration-wrapper	{
+	width:45%;
+	height: 300px;
+	padding: 2%;
+	float: left;
+	background-color: white;
+}
+
+#login-wrapper	{
+	width:45%;
+	height: 300px;
+	padding: 2%;
+	float: right;
+	background-color: white;
+}

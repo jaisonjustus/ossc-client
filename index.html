@@ -2,30 +2,70 @@
 <html>
 	<head>
 		<title>OSSC-CLIENT</title>
+		<link rel="stylesheet" href="assets/styles/app.css" type="text/css"/>
 	</head>
 	<body>
 
-		<div id="content-wrapper">
-			<div id="login-wrapper">
-				<form id="loginForm">
-					<label for="username"> Username </label>
-					<input type="text" id="username" placeholder="username"/>
-
-					<label for="password"> Password </label>
-					<input type="password" id="password" placeholder="password"/>
-
-					<input type="submit"/>
-				</form>
-			</div>
+		<div id="app-wrapper">
+			
 		</div>
+		
+		<!-- <div id="login-wrapper">
+			<form id="loginForm">
+				<label for="username"> Username </label>
+				<input type="text" id="username" placeholder="username"/>
+
+				<label for="password"> Password </label>
+				<input type="password" id="password" placeholder="password"/>
+
+				<input type="submit"/>
+			</form>
+		</div> -->
+
+		<script type="text/template" id="home-template">
+			<header id="main-header">
+				<h1> OSSC Project </h1>
+			</header>
+			<div id="content-wrapper">
+				<div id="registration-wrapper">
+					<form id="registration-form">
+						<ol>
+							<li>		
+								<label for="name">Name</label>
+								<input type="text" id="name" />
+							</li>
+							<li>
+								<label for="email">Email</label>
+								<input type="text" id="email" />
+							</li>
+							<li>
+								<label for="password">Password</label>
+								<input type="password" id="password" />
+							</li>
+							<li>
+								<label for="passwordr">Confirm Password</label>
+								<input type="password" id="passwordr" />
+							</li>
+							<li>
+								<input type="submit" />
+							</li>
+						</ol>
+					</form>
+				</div>
+				<div id="login-wrapper">
+				</div>
+			</div>
+		</script>
 
 		<script type="text/javascript" src="assets/scripts/vendor/jquery/jquery.js"></script>
 		<script type="text/javascript" src="assets/scripts/vendor/underscore/underscore.js"></script>
 		<script type="text/javascript" src="assets/scripts/vendor/backbone/backbone.js"></script>
 
-		<script type="text/javascript" src="app/models/LoginModel.js"></script>
-		<script type="text/javascript" src="app/views/LoginView.js"></script>
-
+		<script type="text/javascript" src="app/models/UserModel.js"></script>
+		<!-- <script type="text/javascript" src="app/views/LoginView.js"></script> -->
+		<script type="text/javascript" src="app/views/HomeMainView.js"></script>
+		<script type="text/javascript" src="app/views/RegistrationView.js"></script>
+		<script type="text/javascript" src="app/app.js"></script>
 		<script type="text/javascript">
 			// var login = new LoginModel({
 			// 	email : 'jaison.justus@ossc.com',
@@ -34,7 +74,7 @@
 
 			// login.login();
 
-			var loginView = new LoginView();
+			//var loginView = new LoginView();
 		</script>
 	</body>
 </html>
