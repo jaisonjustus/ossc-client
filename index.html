@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>OSSC-CLIENT</title>
+		<link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/styles/app.css" type="text/css"/>
 	</head>
 	<body>
@@ -23,36 +24,33 @@
 		</div> -->
 
 		<script type="text/template" id="home-template">
-			<header id="main-header">
-				<h1> OSSC Project </h1>
-			</header>
-			<div id="content-wrapper">
-				<div id="registration-wrapper">
-					<form id="registration-form">
-						<ol>
-							<li>		
-								<label for="name">Name</label>
-								<input type="text" id="name" />
-							</li>
-							<li>
-								<label for="email">Email</label>
-								<input type="text" id="email" />
-							</li>
-							<li>
-								<label for="password">Password</label>
-								<input type="password" id="password" />
-							</li>
-							<li>
-								<label for="passwordr">Confirm Password</label>
-								<input type="password" id="passwordr" />
-							</li>
-							<li>
-								<input type="submit" />
-							</li>
-						</ol>
-					</form>
-				</div>
-				<div id="login-wrapper">
+			<div id="home-content-wrapper">
+				<header id="main-header">
+					<div id="authentication-wrapper">
+						<h1>Open Source Stamp Catalouger Project</h1>
+						<p>No need to register just enter your email and password. if you are a new user we will automatically add to contributors list. <span class="blue">Enjoy contribting.</span></p>
+						<div id="authentication-form-wrapper">
+							<form id="registration-form">
+								<ol>
+									<li>
+										
+										<input type="text" id="email" placeholder="Email"/>
+									</li>
+									<li>
+										<input type="password" id="password" placeholder="Password"/>
+									</li>
+									<li>
+										<input type="submit" class="submit-button" value="Start Contributing"/>
+									</li>
+								</ol>
+							</form>
+						</div>
+					</div>
+				</header>
+				<div id="content-wrapper">
+					
+					<div id="login-wrapper">
+					</div>
 				</div>
 			</div>
 		</script>

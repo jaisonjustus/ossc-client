@@ -30,12 +30,7 @@ var UserModel = Backbone.Model.extend({
 	},
 
 	validate : function(attributes)	{
-		if(attributes.email.length <= 0)	{
-			return "Email shouldn't be empty.";
-		}
-		if(attributes.password.length <= 0)	{
-			return "Password shouldn't be empty.";
-		}
+	
 	},
 
 	/**

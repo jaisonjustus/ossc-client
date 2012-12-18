@@ -2,25 +2,33 @@ body	{
 	padding: 0;
 	margin: 0;
 	border: 0;
-	background-color: #ABABAB;
+	background-image: url(../images/app-background-stripe.png);
 }
 
 #app-wrapper	{
 	width: 100%;
 	height: auto;
-	background-color: #ABABAB;
 	overflow: hidden;
 }
 
+#home-content-wrapper	{
+	width: 990px;
+	height: auto;
+	overflow: hidden;
+	margin:auto;
+}
+
 #main-header	{
-	width: 96%;
-	height: 100px;
-	padding: 20px 2% 20px 2%;
-	background-color: white;
+	width: 250px;
+	height: auto;
+	margin:auto;
+	overflow: hidden;
+	padding: 20px 20px 20px 20px;
 }
 
 #main-header h1	{
-	font:14px "Verdana";
+	font:14px "Scada";
+	color:white;
 }
 
 ol 	{
@@ -30,20 +38,22 @@ ol 	{
 }
 
 ol li 	{
-	margin: 0px 0px 10px 0px;
+	margin: 10px 10px 10px 10px;
+	overflow: hidden;
 }
 
-label	{
-	width:150px;
-	display: block;
+.blue	{
+	color:#3A78BA;
 }
 
 input[type=text], input[type=password]	{
-	width:100%;
+	width:96%;
 	height: 25px;
 	border: 0;
-	border-bottom:1px dotted #171817;
+	border-bottom:1px dotted #ABABAB;
 	padding-left: 5px;
+	font: 14px "Scada";
+	outline: none;
 }
 
 #content-wrapper	{
@@ -53,18 +63,59 @@ input[type=text], input[type=password]	{
 	overflow: hidden;
 }
 
-#registration-wrapper	{
-	width:45%;
-	height: 300px;
-	padding: 2%;
+#header-content-wrapper	{
+	width:250px;
 	float: left;
-	background-color: white;
+	height: auto;
 }
 
-#login-wrapper	{
-	width:45%;
-	height: 300px;
-	padding: 2%;
+#header-content-wrapper	h1{
+	font:10px "Scada";
+	color:white;
+}
+
+#authentication-wrapper	{
+	width:250px;
+	height: auto;
+	padding: 0px 0px 0px 0px;
 	float: right;
+}
+
+#authentication-wrapper h1 	{
+	font:20px "Scada";
+	color: white;
+}
+
+#authentication-wrapper p 	{
+	font:12px "Scada";
+	color: white;
+}
+
+#authentication-form-wrapper	{
+	width:250px;
+	height: auto;
+	padding: 20px 0px 0px 0px;
 	background-color: white;
+	overflow: hidden;
+
+	border-radius:5px;
+}
+
+.submit-button	{
+	background-color: #F20530;	
+	border: 0;
+	font:bold 14px "Scada";
+	color: white;
+	padding: 3px 5px 1px 5px;
+	margin-top: 15px;
+	float: right;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius : 3px;
+	border-radius: 3px;
+}
+
+.submit-button:hover	{
+	box-shadow: 0px 0px 2px #F20530;
+	border-color: #B00047;
 }
